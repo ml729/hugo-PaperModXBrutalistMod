@@ -3,3 +3,346 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+
+
+/* Colors */
+
+:root {
+    /* --header-bg: #008e59; */
+    --header-bg: darkgreen;
+    --header-color: #e9f1f6;
+    /* --header-color: gainsboro; */
+    --heading-color: black;
+}
+
+.dark {
+    --header-bg: darkgoldenrod;
+    --heading-color: rgb(218, 218, 219);
+}
+
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Helvetica',
+  'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC',
+  'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+
+/* Add underlines to nav */
+#menu > li > a {
+    text-decoration: underline;
+    /* text-underline-offset: 2px; */
+    text-decoration-skip-ink: auto;
+}
+
+#menu .active{
+    box-shadow: none;
+}
+
+.logo > a {
+    font-weight: normal;
+}
+
+.post-title {
+    /* font-weight: normal; */
+    /* font-size: 1.7em; */
+
+}
+
+.logo-switches svg {
+    color: var(--header-color);
+
+}
+.logo-switches {
+    /* position: fixed; */
+    /* left: 0; */
+    /* top: 0; */
+
+}
+
+/* .logo-switches{ */
+/*     /\* position: fixed; *\/ */
+/*     /\* top: 15px; *\/ */
+/*     /\* right: 10px; *\/ */
+/*     background: lightgrey; */
+/*     height: 35px; */
+/*     border: 1px solid black; */
+/*     border-radius: 5px; */
+/*     /\* all: unset; *\/ */
+/*     /\* width: 30px; *\/ */
+/*     /\* height: 30px; *\/ */
+/*     /\* background: grey; *\/ */
+/*     /\* padding: 0!important; *\/ */
+/*     /\* position: fixed; *\/ */
+/*     /\* right: 10px; *\/ */
+/*     /\* top: 0; *\/ */
+/*     /\* /\\* background: grey; *\\/ *\/ */
+/*     /\* border: 1px solid black; *\/ */
+/*     /\* -webkit-appearance: button; *\/ */
+/* } */
+/* .logo-switches:hover{ */
+/*     background: darkgrey; */
+
+/* } */
+/* .logo-switches button { */
+/*     position: relative; */
+/*     top: -15px; */
+/*     height: 30px; */
+
+/* } */
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: var(--heading-color) !important;
+    /* color: #8A2BE2 !important; */
+    /* color: #006400 !important; */
+    /* color: #1E90FF !important; */
+    /* color: #4682B4 !important; */
+    /* color: #000080 !important; */
+    /* color: #8B0000 !important; */
+}
+
+.comments-separator {
+    height: 2px;
+    /* display: none; */
+}
+.footer {
+    padding-top: 3px;
+
+}
+
+
+header {
+    max-width: calc(var(--post-width) + var(--gap) * 2) !important;
+    margin: auto;
+
+}
+nav {
+    margin-top: 1.2em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 0px;
+    background: var(--header-bg);
+    color: gainsboro;
+    border-radius: 1px;
+
+}
+nav > .logo{
+    /* flex-grow: 1; */
+    /* text-align: center !important; */
+    /* width: 33.5%; */
+    justify-content: center;
+    /* margin: 0.8em auto; */
+    /* margin-top: 1.2em; */
+
+        /* border: 2px solid; /\* #000 default *\/ */
+    border-radius: 20px 20px 0px 0px;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+    /* padding: 0px 20px 0px 20px; */
+}
+
+nav > .logo > a{
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    border-radius: 5px;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: var(--header-color);
+
+}
+
+nav > .logo:hover > a{
+    /* background-color: lightgrey; */
+
+}
+nav .active, nav a:hover {
+    color: gainsboro !important;
+}
+
+#menu li a {
+    color: gainsboro;
+}
+
+/* nav > #menu { */
+/*     /\* flex-grow: 1; *\/ */
+/*     /\* width: 100%; *\/ */
+/*     margin-top: -1.2em; */
+/*     /\* justify-content: center; *\/ */
+/*     /\* border: 2px dashed black; *\/ */
+/*     /\* border-bottom: 2px dashed black; *\/ */
+/*     padding: 0px 20px 0px 20px; */
+/*         border: 2px solid #ddd; /\* #000 default *\/ */
+/*         background-color: #eee; */
+/*     /\* border-radius: 20px 20px 20px 20px; *\/ */
+/*         border-radius: 13px; */
+/*     /\* border-top: none; *\/ */
+/*     /\* border-bottom: none; *\/ */
+/*         /\* border-left: none; *\/ */
+/*         /\* border-right: none; *\/ */
+/* } */
+
+
+.list-page {
+  background: var(--theme);
+}
+
+.toc {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+.post a {
+    text-decoration: underline;
+
+}
+
+.post-entry:hover .entry-header h2{
+    box-shadow: none;
+}
+
+.post-entry{
+    border: none;
+    display: flex;
+    padding: 0px 2px;
+    margin: 0;
+    flex-direction: row;
+    border-bottom: 1px dotted black;
+    border-radius: 0;
+}
+.post-entry:hover{
+    background: var(--code-bg);
+}
+
+.post-entry .entry-header {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+.post-entry .entry-header h2 {
+    font-size: 18px;
+}
+.post-entry .entry-footer {
+    font-size: 18px;
+
+}
+
+
+.archive-entry {
+    border-bottom: 1px dotted black;
+
+}
+/* .archive-entry { */
+/*     display: flex; */
+/*     flex-direction: row; */
+/*     border-bottom: 1px dotted black; */
+/* } */
+/* .archive-entry:hover { */
+/*     background: var(--code-bg); */
+/* } */
+/* .archive-entry .archive-entry-title { */
+/*     flex-grow: 1; */
+/*     /\* margin-top: 2px; *\/ */
+/*     padding: 0px; */
+/*     margin-top: 6px; */
+/*     margin-bottom: 0px; */
+/*     font-size: 1.2em; */
+/* } */
+/* .archive-entry .archive-meta { */
+/*     font-size: 1.2em; */
+/*     margin-top: 3.8px; */
+/* } */
+
+.page-header h1 {
+    font-size: 35px;
+}
+
+#top-link {
+    border-radius: 5px;
+    font-size: 23px;
+    text-align: center;
+    padding: 0;
+    transition: none;
+    border: 1px solid grey;
+}
+#top-link span {
+    position: relative;
+    /* top: -7px; */
+    top: 2px;
+
+
+}
+
+.post .post-title {
+    padding: 0;
+    margin: 0;
+}
+.post .post-header {
+    margin: 10px auto;
+
+}
+.post .post-meta {
+    margin: 0;
+    padding: 0;
+
+}
+
+.comments-separator {
+
+display: none}
+
+body > footer {
+    /* padding: 0 !important; */
+    border-top: 3px solid lightgrey;
+
+}
+
+h2, h3, h4, h5, h6 {
+    /* margin-bottom: 25px !important; */
+
+}
+
+
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    margin: 24px 0 16px;
+}
+.post-content h2 {
+    margin: 32px 0 24px;
+}
+
+.post-content h1 {
+    /* margin: 40px auto 32px; */
+    font-size: 40px;
+}
+
+.post-content h2 {
+    /* margin: 40px auto 32px; */
+    font-size: 32px;
+}
+
+/* .post-content h3 { */
+/*     font-size: 24px; */
+/* } */
+
+/* .post-content h4 { */
+/*     font-size: 20px; */
+/* } */
+
+/* .post-content h5 { */
+/*     font-size: 14px; */
+/* } */
+
+/* .post-content h6 { */
+/*     font-size: 12px; */
+/* } */
