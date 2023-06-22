@@ -1,5 +1,5 @@
 # PaperModXBrutalistMod
 
-Mod of https://github.com/reorx/hugo-PaperModX
+Fork of https://github.com/reorx/hugo-PaperModX
  
 Inspired by https://themes.gohugo.io/themes/brutalist-minimalist-gohugo-theme/
